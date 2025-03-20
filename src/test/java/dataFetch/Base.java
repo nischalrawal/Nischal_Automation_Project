@@ -60,8 +60,7 @@ public class Base {
         		
        WebElement active_Page = driver.findElement(By.xpath("//ul[@class='pagination']//*[text()="+i+"]"));
         
-       JavascriptExecutor js = (JavascriptExecutor) driver;
-       js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+     
        active_Page.click();    	
        Thread.sleep(1000);
         	}
